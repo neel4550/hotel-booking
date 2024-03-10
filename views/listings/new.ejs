@@ -1,0 +1,49 @@
+<% layout ("/layout/boilerplate.ejs") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2"><br>
+    <h3>Create New Villa's</h3><br>
+    <form method="post" action="/listing" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title:</label>
+            <input name="listing[title]" placeholder="enter your villa name:" type="text" class="form-control" required>
+            <div class="valid-feedback">Looks Good</div>
+            <div class="invalid-feedback">please title required</div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <input type="text" name="listing[Description]" placeholder="aboout your villa:" type="text" class="form-control" required>
+            <div class="valid-feedback">Looks Good</div>
+            <div class="invalid-feedback">please Description required</div>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image:</label>
+            <input name="listing[image]" placeholder="enter your villa img URL/Link:" type="text" class="form-control" >
+            <div class="valid-feedback">Looks Good</div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price:</label>
+                <input name="listing[price]" placeholder="your villa price:" type="number" class="form-control" required>
+                <div class="valid-feedback">Looks Good</div>
+                <div class="invalid-feedback">please price required</div>
+            </div>
+            <div class="mb-3 col-md-8">
+                <label for="location" class="form-label">Location:</label>
+                <input name="listing[location]" placeholder="your villa location:" type="text" class="form-control"required>
+                <div class="valid-feedback">Looks Good</div>
+                <div class="invalid-feedback">please location required</div>
+            </div>
+        </div>
+            
+        <div class="mb-3">
+            <label for="country" class="form-label">Country:</label>
+            <input name="listing[country]" placeholder="your villa country:" type="text" class="form-control">
+        </div>
+        
+        <br><br>
+        <button class="btn btn-dark add-btn">Add your Villa</button><br><br>
+    </form>
+    </div>
+</div>
+</body>
