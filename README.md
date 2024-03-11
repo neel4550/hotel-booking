@@ -1,8 +1,8 @@
 - this is a hotel & Resort booking site. 
 
-- FEATURE : Add new resort
-            Edit Resort
-            Delete Resort
+- FEATURE : Add new resort,
+            Edit Resort,
+            Delete Resort,
             Review Add
 
 - Languages : MongoDB, Express.js, Node.js, HTML, CSS, Boostrap, Javascript etc..
